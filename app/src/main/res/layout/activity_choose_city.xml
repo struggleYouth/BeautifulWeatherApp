@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choose_city"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.beautifulweather.app.ChooseCityActivity">
+
+    <RelativeLayout
+        android:id="@+id/id_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/titlecolr"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/id_switch_city"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="切换"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:textColor="#658ab1df"
+            android:text="中国"
+            android:textSize="35dp"/>
+
+        <Button
+            android:id="@+id/id_refresh_weather"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="更新"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#27A5F9"
+        android:layout_below="@id/id_city"
+        android:layout_marginTop="50dp"
+        android:id="@+id/relativeLayout">
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/id_cityView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/id_title"
+        android:layout_marginTop="20dp">
+    </ListView>
+
+</RelativeLayout>
